@@ -1,0 +1,20 @@
+[submodule "Dependencies/lmath"]
+	path = Dependencies/lmath
+	url = https://github.com/L-proger/lmath.git
+	ignore = untracked
+[submodule "Dependencies/DirectXTex"]
+	path = Dependencies/DirectXTex
+	url = https://github.com/Microsoft/DirectXTex.git
+	ignore = untracked
+[submodule "Dependencies/lframework"]
+	path = Dependencies/lframework
+	url = https://github.com/L-proger/lframework.git
+	ignore = untracked
+[submodule "Examples/Dependencies/DirectUI"]
+	path = Examples/Dependencies/DirectUI
+	url = https://github.com/L-proger/DirectUI.git
+	ignore = untracked
+[submodule "Examples/Dependencies/NativeLINQ"]
+	path = Examples/Dependencies/NativeLINQ
+	url = https://github.com/L-proger/NativeLINQ.git
+	ignore = untracked

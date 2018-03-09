@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEditor", "Examples\GameEditor\GameEditor.vcxproj", "{9900F6BB-33FE-49E7-8F9F-2FDC6A526DE6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3CF1F4AE-9E70-46BD-B475-16138526FB04} = {3CF1F4AE-9E70-46BD-B475-16138526FB04}
+		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4} = {B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RenderFramework", "RenderFramework\RenderFramework.vcxproj", "{3CF1F4AE-9E70-46BD-B475-16138526FB04}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectUI", "Examples\Dependencies\DirectUI\Src\DirectUI.vcxproj", "{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lframework", "Dependencies\lframework\lframework.vcxitems", "{84680875-3793-41BB-B9EF-8408B9FF2AE5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lmath", "Dependencies\lmath\lmath.vcxitems", "{AC7A7E55-B112-4C1C-A6D0-F35AD8BF5164}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Dependencies\lframework\lframework.vcxitems*{84680875-3793-41bb-b9ef-8408b9ff2ae5}*SharedItemsImports = 9
+		Dependencies\lframework\lframework.vcxitems*{9900f6bb-33fe-49e7-8f9f-2fdc6a526de6}*SharedItemsImports = 4
+		Dependencies\lmath\lmath.vcxitems*{9900f6bb-33fe-49e7-8f9f-2fdc6a526de6}*SharedItemsImports = 4
+		Dependencies\lmath\lmath.vcxitems*{ac7a7e55-b112-4c1c-a6d0-f35ad8bf5164}*SharedItemsImports = 9
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9900F6BB-33FE-49E7-8F9F-2FDC6A526DE6}.Debug|x64.ActiveCfg = Debug|x64
+		{9900F6BB-33FE-49E7-8F9F-2FDC6A526DE6}.Debug|x64.Build.0 = Debug|x64
+		{9900F6BB-33FE-49E7-8F9F-2FDC6A526DE6}.Debug|x86.ActiveCfg = Debug|Win32
+		{9900F6BB-33FE-49E7-8F9F-2FDC6A526DE6}.Debug|x86.Build.0 = Debug|Win32
+		{9900F6BB-33FE-49E7-8F9F-2FDC6A526DE6}.Release|x64.ActiveCfg = Release|x64
+		{9900F6BB-33FE-49E7-8F9F-2FDC6A526DE6}.Release|x64.Build.0 = Release|x64
+		{9900F6BB-33FE-49E7-8F9F-2FDC6A526DE6}.Release|x86.ActiveCfg = Release|Win32
+		{9900F6BB-33FE-49E7-8F9F-2FDC6A526DE6}.Release|x86.Build.0 = Release|Win32
+		{3CF1F4AE-9E70-46BD-B475-16138526FB04}.Debug|x64.ActiveCfg = Debug|x64
+		{3CF1F4AE-9E70-46BD-B475-16138526FB04}.Debug|x64.Build.0 = Debug|x64
+		{3CF1F4AE-9E70-46BD-B475-16138526FB04}.Debug|x86.ActiveCfg = Debug|Win32
+		{3CF1F4AE-9E70-46BD-B475-16138526FB04}.Debug|x86.Build.0 = Debug|Win32
+		{3CF1F4AE-9E70-46BD-B475-16138526FB04}.Release|x64.ActiveCfg = Release|x64
+		{3CF1F4AE-9E70-46BD-B475-16138526FB04}.Release|x64.Build.0 = Release|x64
+		{3CF1F4AE-9E70-46BD-B475-16138526FB04}.Release|x86.ActiveCfg = Release|Win32
+		{3CF1F4AE-9E70-46BD-B475-16138526FB04}.Release|x86.Build.0 = Release|Win32
+		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Debug|x64.ActiveCfg = Debug|x64
+		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Debug|x64.Build.0 = Debug|x64
+		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Debug|x86.ActiveCfg = Debug|Win32
+		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Debug|x86.Build.0 = Debug|Win32
+		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Release|x64.ActiveCfg = Release|x64
+		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Release|x64.Build.0 = Release|x64
+		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Release|x86.ActiveCfg = Release|Win32
+		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DF977E2-DF45-4D46-B38E-A93EAFAC64D9}
+	EndGlobalSection
+EndGlobal

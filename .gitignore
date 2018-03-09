@@ -1,0 +1,9 @@
+/Examples/GameEditor/x64
+/Examples/GameEditor/*.filters
+/Examples/GameEditor/*.user
+/RenderFramework/Debug
+/RenderFramework/*.user
+/RenderFramework/x64
+/.vs
+/Debug
+/x64

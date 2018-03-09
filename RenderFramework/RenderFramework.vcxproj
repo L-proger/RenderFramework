@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\RenderFramework\Archive.cpp" />
+    <ClCompile Include="Src\RenderFramework\AssetDatabase.cpp" />
+    <ClCompile Include="Src\RenderFramework\AssetManager.cpp" />
+    <ClCompile Include="Src\RenderFramework\AssetMetadata.cpp" />
+    <ClCompile Include="Src\RenderFramework\Camera.cpp" />
+    <ClCompile Include="Src\RenderFramework\Component.cpp" />
+    <ClCompile Include="Src\RenderFramework\DDSTextureLoader12.cpp" />
+    <ClCompile Include="Src\RenderFramework\GameObject.cpp" />
+    <ClCompile Include="Src\RenderFramework\Gizmos.cpp" />
+    <ClCompile Include="Src\RenderFramework\LEngine.cpp" />
+    <ClCompile Include="Src\RenderFramework\Material.cpp" />
+    <ClCompile Include="Src\RenderFramework\Mesh.cpp" />
+    <ClCompile Include="Src\RenderFramework\MeshGenerator.cpp" />
+    <ClCompile Include="Src\RenderFramework\MeshRenderer.cpp" />
+    <ClCompile Include="Src\RenderFramework\Object.cpp" />
+    <ClCompile Include="Src\RenderFramework\ObjectsFactory.cpp" />
+    <ClCompile Include="Src\RenderFramework\Renderer.cpp" />
+    <ClCompile Include="Src\RenderFramework\RenderTargetOutput.cpp" />
+    <ClCompile Include="Src\RenderFramework\Scene.cpp" />
+    <ClCompile Include="Src\RenderFramework\SceneRenderer.cpp" />
+    <ClCompile Include="Src\RenderFramework\Shader.cpp" />
+    <ClCompile Include="Src\RenderFramework\WindowRenderOutput.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\RenderFramework\Archive.h" />
+    <ClInclude Include="Src\RenderFramework\Asset.h" />
+    <ClInclude Include="Src\RenderFramework\AssetDatabase.h" />
+    <ClInclude Include="Src\RenderFramework\AssetFile.h" />
+    <ClInclude Include="Src\RenderFramework\AssetImporter.h" />
+    <ClInclude Include="Src\RenderFramework\AssetManager.h" />
+    <ClInclude Include="Src\RenderFramework\AssetMetadata.h" />
+    <ClInclude Include="Src\RenderFramework\Bounds.h" />
+    <ClInclude Include="Src\RenderFramework\Camera.h" />
+    <ClInclude Include="Src\RenderFramework\Component.h" />
+    <ClInclude Include="Src\RenderFramework\d3d11_helper.h" />
+    <ClInclude Include="Src\RenderFramework\d3d11_types.h" />
+    <ClInclude Include="Src\RenderFramework\D3d12DescriptorHeapAllocator.h" />
+    <ClInclude Include="Src\RenderFramework\d3dx12.h" />
+    <ClInclude Include="Src\RenderFramework\DDSTextureLoader12.h" />
+    <ClInclude Include="Src\RenderFramework\FatalError.h" />
+    <ClInclude Include="Src\RenderFramework\File.h" />
+    <ClInclude Include="Src\RenderFramework\Filesystem.h" />
+    <ClInclude Include="Src\RenderFramework\ForwardDeclarations.h" />
+    <ClInclude Include="Src\RenderFramework\ForwardListItem.h" />
+    <ClInclude Include="Src\RenderFramework\GameObject.h" />
+    <ClInclude Include="Src\RenderFramework\Gizmos.h" />
+    <ClInclude Include="Src\RenderFramework\GizmoVertex.h" />
+    <ClInclude Include="Src\RenderFramework\Guid.h" />
+    <ClInclude Include="Src\RenderFramework\InputArchive.h" />
+    <ClInclude Include="Src\RenderFramework\LEngine.h" />
+    <ClInclude Include="Src\RenderFramework\Material.h" />
+    <ClInclude Include="Src\RenderFramework\Mathf.h" />
+    <ClInclude Include="Src\RenderFramework\Mesh.h" />
+    <ClInclude Include="Src\RenderFramework\MeshGenerator.h" />
+    <ClInclude Include="Src\RenderFramework\MeshRenderer.h" />
+    <ClInclude Include="Src\RenderFramework\ModelImporter.h" />
+    <ClInclude Include="Src\RenderFramework\Object.h" />
+    <ClInclude Include="Src\RenderFramework\ObjectsFactory.h" />
+    <ClInclude Include="Src\RenderFramework\ObjMeshLoader.h" />
+    <ClInclude Include="Src\RenderFramework\OutputArchive.h" />
+    <ClInclude Include="Src\RenderFramework\Renderer.h" />
+    <ClInclude Include="Src\RenderFramework\RenderOutput.h" />
+    <ClInclude Include="Src\RenderFramework\RenderTargetOutput.h" />
+    <ClInclude Include="Src\RenderFramework\Scene.h" />
+    <ClInclude Include="Src\RenderFramework\SceneRenderer.h" />
+    <ClInclude Include="Src\RenderFramework\Shader.h" />
+    <ClInclude Include="Src\RenderFramework\ShaderInclude.h" />
+    <ClInclude Include="Src\RenderFramework\ShaderParametersBlock.h" />
+    <ClInclude Include="Src\RenderFramework\Submesh.h" />
+    <ClInclude Include="Src\RenderFramework\SwapChainOutput.h" />
+    <ClInclude Include="Src\RenderFramework\Texture.h" />
+    <ClInclude Include="Src\RenderFramework\TextureImporter.h" />
+    <ClInclude Include="Src\RenderFramework\Transform.h" />
+    <ClInclude Include="Src\RenderFramework\Vertex.h" />
+    <ClInclude Include="Src\RenderFramework\WindowRenderOutput.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3CF1F4AE-9E70-46BD-B475-16138526FB04}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RenderFramework</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../Dependencies/lmath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../Dependencies/lmath;$(ProjectDir)../Dependencies/DirectXTex;$(ProjectDir)../Dependencies/NativeLINQ/Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../Dependencies/lmath;$(ProjectDir)../Dependencies/DirectXTex;$(ProjectDir)../Dependencies/NativeLINQ/Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../Dependencies/lmath;$(ProjectDir)../Dependencies/DirectXTex;$(ProjectDir)../Dependencies/NativeLINQ/Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../Dependencies/lmath;$(ProjectDir)../Dependencies/DirectXTex;$(ProjectDir)../Dependencies/NativeLINQ/Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
