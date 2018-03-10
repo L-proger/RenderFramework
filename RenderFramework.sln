@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lframework", "Dependencies\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lmath", "Dependencies\lmath\lmath.vcxitems", "{AC7A7E55-B112-4C1C-A6D0-F35AD8BF5164}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VulkanWrapperSandbox", "Test\VulkanWrapperSandbox\VulkanWrapperSandbox.vcxproj", "{42968273-38D2-4111-BFA7-A19F96078366}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Dependencies\lframework\lframework.vcxitems*{84680875-3793-41bb-b9ef-8408b9ff2ae5}*SharedItemsImports = 9
@@ -55,6 +57,14 @@ Global
 		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Release|x64.Build.0 = Release|x64
 		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Release|x86.ActiveCfg = Release|Win32
 		{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}.Release|x86.Build.0 = Release|Win32
+		{42968273-38D2-4111-BFA7-A19F96078366}.Debug|x64.ActiveCfg = Debug|x64
+		{42968273-38D2-4111-BFA7-A19F96078366}.Debug|x64.Build.0 = Debug|x64
+		{42968273-38D2-4111-BFA7-A19F96078366}.Debug|x86.ActiveCfg = Debug|Win32
+		{42968273-38D2-4111-BFA7-A19F96078366}.Debug|x86.Build.0 = Debug|Win32
+		{42968273-38D2-4111-BFA7-A19F96078366}.Release|x64.ActiveCfg = Release|x64
+		{42968273-38D2-4111-BFA7-A19F96078366}.Release|x64.Build.0 = Release|x64
+		{42968273-38D2-4111-BFA7-A19F96078366}.Release|x86.ActiveCfg = Release|Win32
+		{42968273-38D2-4111-BFA7-A19F96078366}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,3 +7,6 @@
 /.vs
 /Debug
 /x64
+/Test/VulkanWrapperSandbox/x64
+/Test/VulkanWrapperSandbox/*.filters
+/Test/VulkanWrapperSandbox/*.user
