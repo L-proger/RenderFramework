@@ -28,5 +28,15 @@ int main() {
 
 	auto instanceFuncs = instance.getInstanceFunctions();
 
+	auto physicalDevices = instance.enumeratePhysicalDevices();
+
+	auto device = physicalDevices[0];
+
+	auto properties = device.getProperties();
+	auto features = device.getFeatures();
+	auto families = device.getQueueFamilyProperties();
+
+	PFN_vkCreateDevice()
+
 	std::cout << "Test" << std::endl;
 }
