@@ -5,7 +5,6 @@
 	VK_USE_GLOBAL_FUNCTION(vkEnumerateInstanceExtensionProperties) \
 	VK_USE_GLOBAL_FUNCTION(vkEnumerateInstanceLayerProperties)
 
-
 #define VK_INSTANCE_FUNCTIONS \
 	VK_USE_INSTANCE_FUNCTION(vkEnumeratePhysicalDevices) \
 	VK_USE_INSTANCE_FUNCTION(vkGetPhysicalDeviceProperties) \

@@ -5,15 +5,13 @@
 #include <vulkan/vulkan_win32.h>
 #include "DynamicLibrary.h"
 #include "VulkanInstance.h"
+#include "VulkanDynamicLibrary.h"
 
 int main() {
-	//PFN_vkCreateInstance vkCreateInstance = (PFN_vkCreateInstance)vkGetInstanceProcAddr(nullptr, "vkCreateInstance"); //works
 
-	VulkanInstance instance;
-
-	auto globalFuncs = instance.getGlobalFunctions();
-	auto extensions = instance.getSupportedExtensions();
-	auto layers = instance.getSupportedLayers();
+	auto vulkan = std::make_shared<VulkanDynamicLibrary>();
+	auto extensions = vulkan->getSupportedExtensions();
+	auto layers = vulkan->getSupportedLayers();
 
 	VulkanApplicationInfo appInfo("Test project", 1, "Test");
 
@@ -23,20 +21,13 @@ int main() {
 		VK_KHR_WIN32_SURFACE_EXTENSION_NAME
 	};
 
-
-	instance.create(appInfo, 0, instanceLayers, instanceExtensions);
-
-	auto instanceFuncs = instance.getInstanceFunctions();
-
-	auto physicalDevices = instance.enumeratePhysicalDevices();
-
+	auto instance = vulkan->createInstance(appInfo, 0, instanceLayers, instanceExtensions);
+	auto physicalDevices = instance->enumeratePhysicalDevices();
 	auto device = physicalDevices[0];
 
 	auto properties = device.getProperties();
 	auto features = device.getFeatures();
 	auto families = device.getQueueFamilyProperties();
-
-	PFN_vkCreateDevice()
 
 	std::cout << "Test" << std::endl;
 }

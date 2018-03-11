@@ -130,14 +130,20 @@
     <ClCompile Include="DynamicLibrary.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="VulkanInstance.cpp" />
+    <ClCompile Include="VulkanLibrary.cpp" />
     <ClCompile Include="VulkanPhysicalDevice.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DynamicLibrary.h" />
+    <ClInclude Include="IntrusivePtr.h" />
+    <ClInclude Include="RefCountedObject.h" />
     <ClInclude Include="StdFilesystem.h" />
     <ClInclude Include="VulkanApplicationInfo.h" />
+    <ClInclude Include="VulkanCommon.h" />
+    <ClInclude Include="VulkanDynamicLibrary.h" />
     <ClInclude Include="VulkanFunctions.h" />
     <ClInclude Include="VulkanInstance.h" />
+    <ClInclude Include="VulkanLibrary.h" />
     <ClInclude Include="VulkanPhysicalDevice.h" />
     <ClInclude Include="VulkanQueueFamilyProperties.h" />
   </ItemGroup>

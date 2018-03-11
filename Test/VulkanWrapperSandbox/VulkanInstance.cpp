@@ -1,19 +1,12 @@
 #include "VulkanInstance.h"
 
-VulkanGlobalFunctions::VulkanGlobalFunctions(const VulkanInstance& instance) {
-#define VK_USE_GLOBAL_FUNCTION(name) name = instance.getInstanceProcAddr<PFN_##name>(nullptr, #name);
-	VK_GLOBAL_FUNCTIONS
-#undef VK_USE_GLOBAL_FUNCTION
-}
-
-
 VulkanInstanceFunctions::VulkanInstanceFunctions(const VulkanInstance& instance) {
-#define VK_USE_INSTANCE_FUNCTION(name) name = instance.getInstanceProcAddr<PFN_##name>(instance.vkInstance(), #name);
+#define VK_USE_INSTANCE_FUNCTION(name) name = instance.getProcAddr<PFN_##name>(instance.vkInstance(), #name);
 	VK_INSTANCE_FUNCTIONS
 #undef VK_USE_INSTANCE_FUNCTION
 }
 
-std::vector<VulkanPhysicalDevice> VulkanInstance::enumeratePhysicalDevices() const {
+std::vector<VulkanPhysicalDevice> VulkanInstance::enumeratePhysicalDevices() {
 	auto deviceCount = getPhysicalDeviceCount();
 	std::vector<VkPhysicalDevice> devices(deviceCount);
 
@@ -23,7 +16,7 @@ std::vector<VulkanPhysicalDevice> VulkanInstance::enumeratePhysicalDevices() con
 
 	while (true) {
 
-		auto result = _instanceFunctions->vkEnumeratePhysicalDevices(_instance, &deviceCount, &devices[0]);
+		auto result = _instanceFunctions.vkEnumeratePhysicalDevices(_instance, &deviceCount, &devices[0]);
 		if (result == VK_INCOMPLETE) {
 			deviceCount = getPhysicalDeviceCount();
 		}
@@ -38,7 +31,7 @@ std::vector<VulkanPhysicalDevice> VulkanInstance::enumeratePhysicalDevices() con
 
 	std::vector<VulkanPhysicalDevice> result;
 	for (auto& device : devices) {
-		result.push_back(VulkanPhysicalDevice(*this, device));
+		result.push_back(VulkanPhysicalDevice(this, device));
 	}
 	return result;
 }
