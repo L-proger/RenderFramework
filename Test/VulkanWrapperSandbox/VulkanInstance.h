@@ -22,10 +22,12 @@ public:
 #undef VK_USE_INSTANCE_FUNCTION
 };
 
+//TODO: manage external and internal instance creation and destroy instance in destructor if created internally
 class VulkanInstance : public RefCountedObject {
 public:
 	VulkanInstance(IntrusivePtr<VulkanLibrary> library, VkInstance instance) : _library(library),_instance(instance){
 		_instanceFunctions = VulkanInstanceFunctions(*this);
+		
 	}
 
 	const VulkanInstanceFunctions& functions() const {
@@ -37,12 +39,8 @@ public:
 	}
 
 	template<typename FunctionPtr, typename = std::enable_if_t<std::is_function_v<std::remove_pointer_t<FunctionPtr>>>>
-	auto getProcAddr(VkInstance instance, const char* name) const {
-		return reinterpret_cast<FunctionPtr>(getProcAddr(instance, name));
-	}
-
-	auto getProcAddr(VkInstance instance, const char* name) const {
-		return _library->getInstanceProcAddr(instance, name);
+	auto getProcAddr(const char* name) const {
+		return reinterpret_cast<FunctionPtr>(_library->getInstanceProcAddr(_instance, name));
 	}
 
 	uint32_t getPhysicalDeviceCount() const {

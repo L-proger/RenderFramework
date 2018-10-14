@@ -1,5 +1,6 @@
 #pragma once
 #include <type_traits>
+#include <stdexcept>
 
 template<typename T>
 void IntrusivePtrAddRef(T* ptr) {
@@ -19,8 +20,6 @@ public:
 	~IntrusivePtr() {
 		reset();
 	}
-
-	
 
 	template<typename U>
 	IntrusivePtr(U* src, bool addref = true) : _object(static_cast<std::add_pointer_t<std::enable_if_t<std::is_convertible_v<U, Object>, Object>>>(src)) {
@@ -63,10 +62,16 @@ public:
 	}
 
 	Object* operator->() {
+		if (_object == nullptr) {
+			throw new std::runtime_error("Accessing null object in IntrusivePtr");
+		}
 		return _object;
 	}
 
 	const Object* operator->() const {
+		if (_object == nullptr) {
+			throw new std::runtime_error("Accessing null object in IntrusivePtr");
+		}
 		return _object;
 	}
 

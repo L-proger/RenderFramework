@@ -1,7 +1,7 @@
 #include "VulkanInstance.h"
 
 VulkanInstanceFunctions::VulkanInstanceFunctions(const VulkanInstance& instance) {
-#define VK_USE_INSTANCE_FUNCTION(name) name = instance.getProcAddr<PFN_##name>(instance.vkInstance(), #name);
+#define VK_USE_INSTANCE_FUNCTION(name) name = instance.getProcAddr<PFN_##name>(#name);
 	VK_INSTANCE_FUNCTIONS
 #undef VK_USE_INSTANCE_FUNCTION
 }

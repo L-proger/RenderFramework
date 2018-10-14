@@ -14,6 +14,10 @@ public:
 	VkPhysicalDeviceProperties getProperties() const;
 	VkPhysicalDeviceFeatures getFeatures() const;
 	std::vector<VulkanQueueFamilyProperties> getQueueFamilyProperties() const;
+	std::vector<VkExtensionProperties> getExtensions(const char* layerName = nullptr) const;
+	uint32_t getQueueFamiliesCount() const;
+	VkPhysicalDevice getDevice() const;
+	IntrusivePtr<VulkanInstance> getInstance() const;
 private:
 	IntrusivePtr<VulkanInstance> _instance;
 	VkPhysicalDevice _device;
